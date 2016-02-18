@@ -18,11 +18,21 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             RoutesComponent = (function () {
                 function RoutesComponent() {
+                    console.log($);
+                    $('#example').DataTable({
+                        "language": {
+                            "paginate": {
+                                "next": ">>",
+                                "previous": "<<"
+                            }
+                        }
+                    });
                 }
                 RoutesComponent = __decorate([
                     core_1.Component({
                         selector: 'my-route',
-                        templateUrl: 'app/routes.component.html'
+                        templateUrl: 'app/routes.component.html',
+                        styleUrls: ['plugins/datatables/dataTables.bootstrap.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], RoutesComponent);

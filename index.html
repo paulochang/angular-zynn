@@ -5,7 +5,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <script>document.write('<base href="' + document.location + '" />');</script>
+  <base href="/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mobile Suitcase | angular-zynn </title>
@@ -67,10 +67,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Datatables -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!--GMaps -->
+<script src=" https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.22/gmaps.min.js"></script>
 <!-- AdminLTE App -->
 <script type="text/javascript">
 function downloadJSAtOnload() {
-var element = document.createElement("script");
+    var element = document.createElement("script");
 element.src = "dist/js/app.min.js";
 document.body.appendChild(element);
 }
